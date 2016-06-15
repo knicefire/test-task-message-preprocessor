@@ -62,7 +62,7 @@ Output: {
 ### Usage
 ```js
 
-const preprocessor = require('preprocessor');
+const preprocessor = require('hipchat-message-preprocessor');
 
 // enable buld-in preprocessors
 preprocessor.use('emotions', 'mentions', 'links');
@@ -80,6 +80,7 @@ preprocessor.use({
     }
 });
 
+// attaching to a stream
 socket.on('message', (message) => {
     const context = preprocessor.onMessage(message);
 
