@@ -11,7 +11,7 @@ In order to the code to work properly you need to be running:
 ### Installation
 ```bash
 # cloning the repo
-git clone https://gitlab.com/knicefire/hipchat-message-postprocessor.git
+git clone https://gitlab.com/knicefire/hipchat-message-preprocessor.git
 cd hipchat-message-postprocessor
 
 # installing dependency
