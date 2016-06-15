@@ -12,7 +12,7 @@ In order to the code to work properly you need to be running:
 ```bash
 # cloning the repo
 git clone https://gitlab.com/knicefire/hipchat-message-preprocessor.git
-cd hipchat-message-postprocessor
+cd hipchat-message-preprocessor
 
 # installing dependency
 npm install
