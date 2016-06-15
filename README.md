@@ -29,7 +29,7 @@ node cli.js 'hello @world, how about some (coffee)?'
 ### Plugins
 The module is highly configurable and supports custom text processors to be added on runtime
 
-### Text preprocessors supported in the package
+### Plugins supported in the package
 - **Mentions:** A way to mention a user. Always starts with an '@' and ends when hitting a non-word character.
         example: "@chris you around?"
 - **Emoticons:** Alphanumeric strings, no longer than 15 characters, contained in parenthesis
@@ -37,7 +37,7 @@ The module is highly configurable and supports custom text processors to be adde
 - **Links:** Any URLs contained in the message, along with the page's title.
         example: "Olympics are starting soon; http://www.nbcolympics.com"
 
-### Conventions
+### Adding your plugins
 A plugin must implement following interface
 - **matcher**: a function to which a message is given. should return a context if any
 - **name**: the name of the plugin which will be used as a property name in the resulted object
@@ -48,7 +48,7 @@ The context is attached to the resulted object. If no context has been returned,
 <pre>
 Example:
 
-Input: "@chris you around? would you like a coup of (coffee)?"
+Input: "@chris you around? would you like a cup of (coffee)?"
 Output: {
     mentions: [
         "chris"
